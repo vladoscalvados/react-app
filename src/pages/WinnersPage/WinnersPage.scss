@@ -1,0 +1,199 @@
+.winners__block-item-tel {}
+
+.winners__block-item-data {
+  br {
+    display: none;
+  }
+  @media (max-width: 450px) {
+    br {
+      display: block;
+    }
+  }
+  @media (min-width: 1199px) {
+    width: 100px;
+  }
+}
+.loadMessage {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+}
+.winners{
+  margin-top:10px;
+  background-color: black;
+  padding: 94px 0;
+  .circle-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  &__content{
+    max-width: 1070px;
+    margin: 0 auto;
+  }
+
+
+  &__inner{
+    margin: 0 auto;
+    padding: 9px;
+    max-width: 800px;
+  }
+  &__title{
+    font-family: Thicker Trial Italic, sans-serif;;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0 20px;
+    text-shadow: 1px -1px 0px #000, 2px 2.3px 0px #000, -1.5px 1px 0px #000,
+    -1px -1px 0px #000, 1.3px 2.3px 0px #000, 2.4px 3px 0px #fff,
+    2.3px 2.8px 0px #fff, 0px 3px 0px #fff, 3px 1.6px 0px #fff;
+  }
+  @media (max-width: 414px) {
+    &__title {
+      font-family: Thicker Trial Italic, sans-serif;;
+      font-style: italic;
+      font-weight: 900;
+      font-size: 42px;
+      line-height: 50px;
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+    }
+  }
+  @media (min-width: 1199px) {
+    &__title {
+      font-style: italic;
+      font-weight: 900;
+      font-size: 70px;
+      line-height: 70px;
+      text-transform: uppercase;
+      color: #fff;
+      padding-left: 45px;
+    }
+  }
+  &__area{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &-input{
+      input {
+        padding: 15px;
+        min-width: 240px;
+        font-size: 16px;
+      }
+    }
+    &-btn{
+      margin: 0 30px;
+      position: relative;
+    }
+    &-btn::before {
+      content: "";
+      position: absolute;
+      border: 1px solid #fff;
+      width: 45px;
+      height: 45px;
+      bottom: -10px;
+      right: -13px;
+      border-radius: 50%;
+    }
+  }
+  &__block {
+    margin-top: 20px;
+    padding: 2px;
+    max-width: 780px;
+    position: relative;
+    z-index: 500;
+
+
+    &-item {
+      display: grid;
+      grid-template-columns: 25% 30% 25% 20%;
+      font-family: Thicker Trial;
+      padding: 25px 10px 0;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 11px;
+      line-height: 11px;
+      text-transform: uppercase;
+      background: #FFE200;
+      @media (max-width: 321px) {
+        padding: 25px 5px 0px;
+        display: grid;
+        grid-template-columns: 25% 30% 25% 20%;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 9px;
+        line-height: 11px;
+        text-transform: uppercase;
+        background: #FFE200;
+      }
+      @media (min-width: 767px) {
+        padding: 25px 18px 0 ;
+        display: grid;
+        grid-template-columns: 25% 30% 25% 20%;
+        text-align: center;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 11px;
+        text-transform: uppercase;
+        background: #FFE200;
+      }
+    }
+
+    &-user {
+      font-family: "Atomic Age";
+      display: grid;
+      grid-template-columns: 25% 30% 25% 20%;
+      font-size: 11px;
+      line-height: 11px;
+      text-align: center;
+      font-weight: 300;
+      text-transform: uppercase;
+      padding: 17px 10px;
+      background: #FFE200;
+      @media (max-width: 321px) {
+        display: grid;
+        grid-template-columns: 25% 35% 25% 20%;
+        font-size: 8px;
+        line-height: 11px;
+        font-weight: 300;
+        text-transform: uppercase;
+        padding: 7px 0;
+        background: #FFE200;
+      }
+      @media (max-width: 439px) {
+        display: grid;
+        grid-template-columns: 25% 30% 20% 20%;
+        font-size: 8px;
+        line-height: 11px;
+        font-weight: 300;
+        text-transform: uppercase;
+        padding: 7px 0;
+        background: #FFE200;
+      }
+      @media (min-width: 767px) {
+        display: grid;
+        grid-template-columns: 25% 35% 20% 20%;
+        text-align: center;
+        font-size: 11px;
+        line-height: 11px;
+        font-weight: 300;
+        text-transform: uppercase;
+        padding: 17px 10px;
+        background: #FFE200;
+      }
+      &-prize {
+        font-family: Atomic Age;
+      }
+      &-name {
+        font-family: Thicker Trial;
+      }
+    }
+  }
+}

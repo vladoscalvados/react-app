@@ -1,0 +1,57 @@
+.sim {
+  color: #FFFFFF;
+  box-sizing: border-box;
+  &-wrapper {
+    max-width: 360px;
+    padding: 24px 10px;
+    margin: 0 auto;
+  }
+  &__inner {
+    padding: 0 20px;
+  }
+  &__title {
+    font-family: 'Thicker Trial';
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  &__subtitle {
+    font-family: Thicker Trial;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 10px;
+  }
+  &__inputs {
+    text-align: center;
+    &-area {
+      margin: 14px 0;
+      input {
+        width: 100%;
+        padding: 7px 20px;
+      }
+    }
+  }
+  &__button {
+    text-align: center;
+    margin-top: 40px;
+    button{
+      font-family: Thicker Trial;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 15px;
+      text-align: center;
+      background-color: #FADC05;
+      border: 2px solid #FADC05;
+      box-sizing: border-box;
+      padding: 25px ;
+    }
+  }
+}

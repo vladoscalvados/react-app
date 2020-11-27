@@ -1,0 +1,53 @@
+.format {
+  color: #fff;
+  max-width: 560px;
+  margin-top: 40px;
+  background-color: #000;
+  padding-top: 28px;
+  &__inner {
+    margin: 0 auto;
+    max-width: 360px;
+  }
+  &__close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 23px;
+    a{
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  &__title {
+    font-family: Thicker Trial;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 490px;
+    margin: 0 auto;
+  }
+  &__block {
+    padding: 10px 44px;
+
+    &-item {
+      text-align: center;
+      color: #000;
+      background: #FADC05;
+      border: 2px solid #FADC05;
+      box-sizing: border-box;
+      margin: 14px;
+      padding: 12px;
+      font-family: Thicker Trial;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 17px;
+      text-transform: uppercase;
+    }
+  }
+}
+

@@ -1,0 +1,178 @@
+.faqBlock {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 100px;
+
+  .titleFAQBlock {
+    width: 100%;
+    display: flex;
+    font-family: Thicker Trial Italic, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 25px;
+    text-shadow: 1px -1px 0px #000, 2px 2.3px 0px #000,
+    -1.5px 1px 0px #000, -1px -1px 0px #000,
+    1.3px 2.3px 0px #000, 2.4px 3px 0px #fff,
+    2.3px 2.8px 0px #fff, 0px 3px 0px #fff, 3px 1.6px 0px #fff;
+    img {
+      margin: 0 8px;
+      padding-top: 10px;
+    }
+  }
+  .faqCardsWrap {
+    width: 100%;
+    .faqCard {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #fff;
+      padding: 10px;
+      margin-bottom: 10px;
+      font-family: Thicker Trial, sans-serif;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 19px;
+      color: #FFFFFF;
+    }
+
+    .faqCardActive {
+      background-color: #FADC05;
+      border: 1px solid #fff;
+      padding: 10px;
+      margin-bottom: 10px;
+
+      .faqCardTitle {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0 10px;
+        font-family: Thicker Trial, sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 19px;
+      }
+
+      .faqCardText {
+        padding-right: 14px;
+        font-family: Atomic Age, sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.linksFAQ {
+  font-family: Thicker Trial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #000;
+}
+
+.brMobile {
+  display: none;
+}
+
+.iconFaq {
+  transform: rotate(180deg);
+}
+
+@media screen and (min-width: 1200px) {
+  .faqBlock {
+    .titleFAQBlock {
+      font-size: 70px;
+      margin-bottom: 50px;
+    }
+
+    .faqCardsWrap {
+      padding-left: 5%;
+      width: 85%;
+    }
+  }
+
+  .hideBgFAQ {
+    padding: 0 100px;
+    margin-bottom: 0;
+  }
+
+  .brMobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .faqBlock {
+    .titleFAQBlock {
+      font-size: 50px;
+    }
+
+    .faqCardsWrap {
+      width: 85%;
+      padding-left: 5%;
+    }
+  }
+
+  .hideBgFAQ {
+    padding: 0 100px;
+    margin-bottom: 0;
+  }
+
+  .brMobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .faqBlock {
+    padding: 10px 10px 55px;
+  }
+
+  .brMobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .faqBlock {
+    .faqCardsWrap {
+      .faqCard {
+        font-size: 14px;
+      }
+
+      .faqCardActive {
+        .faqCardTitle {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .brMobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 281px) {
+  .faqBlock {
+    .faqCardsWrap {
+      .faqCard {
+        font-size: 14px;
+      }
+
+      .faqCardActive {
+        .faqCardTitle {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .brMobile {
+    display: block;
+  }
+}

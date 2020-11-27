@@ -1,0 +1,43 @@
+.style {
+  li.carousel-dots-active button:before {
+    color: #FADC05;
+    opacity: 1;
+  }
+  li button::before{
+    color: #FFFFFF;
+    opacity: 1;
+  }
+}
+
+.carousel-initialized::after {
+
+}
+
+.SliderWrapper {
+  position: relative;
+}
+
+.SliderWrapper:focus {
+  outline: none;
+}
+
+.SliderWrapper::after {
+  position: absolute;
+  content: "";
+  width: 99%;
+  height: 82%;
+  border: 1px solid white;
+  top: 33px;
+  right: -8px;
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.SliderWrapper div:focus {
+  outline: none;
+}
+
+//.carousel-item:focus, .carousel-row:focus, .carousel-initialized:focus {
+//  outline: none;
+//}

@@ -1,0 +1,335 @@
+.cardsBlock {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 85px 20px 0;
+
+  .titleCardsBlock {
+    width: 100%;
+    font-family: Thicker Trial Italic, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 40px;
+    text-shadow: 1px -1px 0px #000, 2px 2.3px 0px #000,
+    -1.5px 1px 0px #000, -1px -1px 0px #000,
+    1.3px 2.3px 0px #000, 2.4px 3px 0px #fff,
+    2.3px 2.8px 0px #fff, 0px 3px 0px #fff, 3px 1.6px 0px #fff;
+  }
+
+  .cardWrapCardsBlock {
+    position: relative;
+    width: 305px;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 55px;
+
+    .cardCardsBlock {
+      width: 302px;
+      padding: 27px;
+      position: relative;
+      border: 1px solid #fff;
+      background-color: #000;
+      color: #fff;
+      z-index: 100;
+
+      .labelCardsBlock {
+        width: 62px;
+        height: 62px;
+        position: absolute;
+        top: -25px;
+        left: -33px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        background-color: #FADC05;
+        font-family: Atomic Age, sans-serif;
+        font-size: 40px;
+        line-height: 54px;
+        color: #000;
+        letter-spacing: -5px;
+      }
+
+      .cardTitle {
+        font-family: Thicker Trial, sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 23px;
+        line-height: 30px;
+        text-transform: uppercase;
+
+        .elemNumber {
+          font-family: Atomic Age, sans-serif;
+        }
+      }
+
+      .cardSubTitle {
+        margin-bottom: 10px;
+        font-family: Thicker Light Trial, sans-serif;
+        font-size: 18px;
+        line-height: 36px;
+        text-transform: uppercase;
+      }
+
+      .arrowImg {
+        width: 113px;
+      }
+
+      .cardTwoBtn {
+        width: 100%;
+        position: absolute;
+        top: 125px;
+        left: 0;
+      }
+
+      .linkCardQuestion {
+        display: flex;
+        align-items: center;
+        font-family: Atomic Age, sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 36px;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        .iconQuestionBlock {
+          width: 27px;
+          height: 27px;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+
+  .cardWrapCardsBlock:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    border: 1px solid #fff;
+    left: 4px;
+    top: 5px;
+  }
+}
+
+@media screen and (min-width: 1220px) {
+  .cardsBlock {
+    .titleCardsBlock {
+      width: auto;
+      font-size: 50px;
+      line-height: 65px;
+    }
+
+    .cardWrapCardsBlock {
+      width: 558px;
+      min-height: 125px;
+
+      .maskCardsBlock {
+        width: 558px;
+      }
+
+      .cardCardsBlock {
+        padding: 20px 35px 10px;
+        width: 558px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .cardTitle {
+          font-size: 32px;
+          line-height: 32px;
+          margin: 0;
+        }
+
+        .cardTwoBtn {
+          top: 75px;
+        }
+
+        .lastTitle {
+          font-size: 28px;
+        }
+
+        .cardSubTitle {
+          margin: 0;
+        }
+      }
+
+      .linkCardQuestion {
+        font-size: 14px;
+
+        .labelCardsBlock {
+          width: 52px;
+          height: 52px;
+          font-size: 35px;
+          left: -27px;
+        }
+      }
+
+      .arrowImg {
+        width: 100px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1220px) and (min-width: 993px) {
+  .cardsBlock {
+    .titleCardsBlock {
+      width: auto;
+      font-size: 50px;
+      line-height: 65px;
+    }
+
+    .cardWrapCardsBlock {
+      width: 400px;
+
+      .maskCardsBlock {
+        width: 400px;
+      }
+
+      .cardCardsBlock {
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .cardTwoBtn {
+          top: 65px;
+        }
+
+        .cardTitle {
+          font-size: 32px;
+          line-height: 32px;
+          margin: 0;
+        }
+      }
+
+
+      .linkCardQuestion {
+        font-size: 14px;
+
+        .labelCardsBlock {
+          width: 52px;
+          height: 52px;
+          font-size: 35px;
+          left: -27px;
+        }
+      }
+
+      .arrowImg {
+        width: 100px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .row {
+    width: 100%;
+  }
+
+  .cardsBlock {
+    padding: 20px;
+
+    .cardWrapCardsBlock {
+      .cardCardsBlock {
+        .cardTwoBtn {
+          top: 65px;
+        }
+
+        .cardTitle {
+          font-size: 18px;
+          margin: 0;
+        }
+
+        .cardSubTitle {
+          margin: 0;
+        }
+      }
+
+      .arrowImg {
+        width: 100px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .cardsBlock {
+
+    .titleCardsBlock {
+      font-size: 31px;
+    }
+
+    .cardWrapCardsBlock {
+      width: 240px;
+
+      .maskCardsBlock {
+        width: 240px;
+      }
+
+      .cardCardsBlock {
+        width: 240px;
+
+        .cardTwoBtn {
+          top: 65px;
+        }
+      }
+
+      .wrapTitle {
+        .cardTitle {
+          font-size: 17px;
+          line-height: 17px;
+        }
+      }
+
+      .linkCardQuestion {
+        font-size: 14px;
+
+        .labelCardsBlock {
+          width: 52px;
+          height: 52px;
+          font-size: 35px;
+          left: -27px;
+        }
+      }
+
+      .arrowImg {
+        width: 100px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 281px) {
+  .cardWrapCardsBlock {
+    width: 215px;
+    word-break: break-word;
+
+    .cardTitle {
+      font-size: 14px;
+      line-height: 14px;
+    }
+
+    .cardSubTitle {
+      font-size: 12px;
+    }
+
+    .cardCardsBlock {
+      width: 215px;
+    }
+
+    .maskCardsBlock {
+      width: 215px;
+    }
+  }
+}

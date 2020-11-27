@@ -1,0 +1,315 @@
+.questionBlock {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 60px 100px 55px;
+  background-image: url('../../../.././images/background-2.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .containerQuestion {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .titleQuestionBlock {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    font-family: Thicker Trial Italic, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 25px;
+    text-shadow: 1px -1px 0px #000, 2px 2.3px 0px #000,
+    -1.5px 1px 0px #000, -1px -1px 0px #000,
+    1.3px 2.3px 0px #000, 2.4px 3px 0px #fff,
+    2.3px 2.8px 0px #fff, 0px 3px 0px #fff, 3px 1.6px 0px #fff;
+
+    img {
+      position: absolute;
+      margin: 0 10px;
+      padding-top: 5px;
+    }
+
+    .elemDesk {
+      display: none;
+    }
+  }
+
+  .formQuestionBlock {
+    input {
+      margin-bottom: 15px;
+    }
+  }
+}
+.feedErrorMessage {
+  color: #FF0F00;
+  font-size: 14px;
+  font-weight: 900;
+}
+.feedSuccessMessage {
+  font-size: 18px;
+  font-weight: 900;
+}
+.inputBlock {
+  width: 100%;
+  height: 60px;
+  color: #838383;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border: 1px solid #000;
+}
+
+
+.textareaBlock {
+  padding-top: 10px;
+  height: auto;
+}
+
+.hideBgQuestion {
+  background: none;
+  padding: 0 10px;
+}
+
+
+.iconQuestion {
+  transform: rotate(180deg);
+}
+
+@media screen and (min-width: 1200px) {
+  .questionBlock {
+    .containerQuestion {
+      justify-content: flex-start;
+    }
+
+    .titleQuestionBlock {
+      font-size: 70px;
+      line-height: 85px;
+      margin-bottom: 60px;
+
+      .elemMobile {
+        display: none;
+      }
+
+      .elemDesk {
+        display: block;
+        padding: 20px 8px;
+      }
+    }
+
+    .formQuestionBlock {
+      width: 60%;
+      padding-left: 5%;
+    }
+
+    .btnQuestion {
+      justify-content: flex-start;
+      margin-top: 50px;
+    }
+  }
+
+  .hideBgQuestion {
+    background: none;
+    padding: 0 100px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 825px) {
+  .questionBlock {
+    .containerQuestion {
+      justify-content: flex-start;
+    }
+
+    .titleQuestionBlock {
+      font-size: 55px;
+      line-height: 65px;
+      margin-bottom: 60px;
+
+      .elemMobile {
+        display: none;
+      }
+
+      .elemDesk {
+        display: block;
+        padding: 10px 8px;
+      }
+    }
+
+    .formQuestionBlock {
+      width: 75%;
+      padding-left: 5%;
+    }
+
+    .btnQuestion {
+      justify-content: flex-start;
+      margin-top: 50px;
+    }
+  }
+
+  .hideBgQuestion {
+    background: none;
+    padding: 0 100px;
+  }
+}
+
+@media screen and (max-width: 825px) and (min-width: 600px) {
+  .questionBlock {
+    padding: 60px 10px 55px;
+    background-image: url('../../../.././images/bg-question.svg');
+
+    .containerQuestion {
+      justify-content: flex-start;
+    }
+
+    .titleQuestionBlock {
+      font-size: 45px;
+      line-height: 57px;
+
+      .elemMobile {
+        display: none;
+      }
+
+      .elemDesk {
+        display: block;
+        padding: 10px 8px;
+      }
+    }
+
+    .formQuestionBlock {
+      width: 75%;
+      padding-left: 5%;
+    }
+
+    .btnQuestion {
+      justify-content: flex-start;
+      margin-top: 50px;
+    }
+  }
+
+  .hideBgQuestion {
+    background: none;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .questionBlock {
+    padding: 60px 10px 55px;
+    background-image: url('../../../.././images/bg-question.svg');
+
+    .titleQuestionBlock {
+      display: block;
+    }
+
+    .formQuestionBlock {
+      width: 100%;
+
+      .inputBlock {
+        width: -webkit-fill-available;
+      }
+    }
+  }
+
+  .hideBgQuestion {
+    background: none;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 376px) and (min-width: 321px) {
+  .questionBlock {
+    background-image: url('../../../.././images/bg-question.svg');
+
+    .titleQuestionBlock {
+      font-size: 35px;
+      line-height: 40px;
+    }
+
+    .subTitleQuestionBlock {
+      font-size: 16px;
+    }
+  }
+
+  .hideBgQuestion {
+    background: none;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .inputBlock {
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .questionBlock {
+    background-image: url('../../../.././images/bg-question.svg');
+
+    .titleQuestionBlock {
+      font-size: 36px;
+      line-height: 45px;
+    }
+
+    .subTitleQuestionBlock {
+      font-size: 16px;
+    }
+  }
+
+  .hideBgQuestion {
+    background: none;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .questionBlock {
+    background-image: url('../../../.././images/bg-question.svg');
+    padding: 35px 20px 55px;
+
+    .titleQuestionBlock {
+      font-size: 30px;
+      line-height: 35px;
+
+      img {
+        width: 45px;
+        height: 45px;
+      }
+    }
+
+    .textareaBlock {
+      padding-top: 10px;
+      height: auto;
+    }
+  }
+
+  .hideBgQuestion {
+    background: none;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 281px) {
+  .questionBlock {
+    .titleQuestionBlock {
+      font-size: 24px;
+      line-height: 30px;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  .hideBgQuestion {
+    background: none;
+    padding: 0 10px;
+  }
+}

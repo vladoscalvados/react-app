@@ -1,0 +1,51 @@
+.footer {
+  max-height: 80px;
+  &__inner {
+    padding: 10px 20px;
+    background-color: #FADC05;
+  }
+  &__wrapper {
+    min-width: 320px;
+    background-color: #000;
+  }
+}
+.logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 1023px) {
+  .logos {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1439px) {
+  .logos {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+.z-logo {
+  max-height: 60px;
+  img {
+    width: 55px;
+  }
+}
+.beeline-logo{
+  max-height: 60px;
+}
+@media (min-width: 1023px) {
+  .z-logo, .beeline-logo {
+    margin: 0 12px;
+    height: 60px;
+  }
+}
+@media (min-width: 1439px) {
+  .z-logo, .beeline-logo {
+    margin: 0 16px;
+  }
+}

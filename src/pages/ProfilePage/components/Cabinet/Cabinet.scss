@@ -1,0 +1,300 @@
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 26px solid black;
+  border-left: 26px solid transparent;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  z-index: 100000;
+}
+
+.copyTooltip {
+  margin-bottom: 10px;
+  background-color: #FADC05;
+  padding: 4px;
+  border-radius: 6px;
+}
+.cabinet__data-block-item {
+  img {
+    margin-left: 12px;
+  }
+}
+.cabinet {
+  background-color: black;
+  color: #fff;
+  &__content{
+    margin: 0 auto;
+    max-width: 1074px;
+  }
+  &__data-block-item-key {
+    width: 60px;
+    @media (max-width: 320px){
+      width: 36px;
+    }
+  }
+  &__inner{
+    padding: 12px;
+  }
+  .wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: initial;
+    max-width: 1080px;
+
+  }
+
+  &__item{
+    width: 100%;
+    margin: 25px auto 0;
+    padding: 27px 17px;
+  }
+  &__data{
+    max-width: 450px;
+
+    @media (max-width: 768px){
+      order: 1;
+    }
+  }
+  &__giga{
+    max-width: 560px;
+    position: relative;
+    border: 1px solid;
+
+    &::after{
+      content: '';
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      width: 25px;
+      height: 25px;
+      background-image: url('../../../../images/triangle.jpg');
+      background-size: contain;
+    }
+    @media (max-width: 768px){
+      order: 3;
+    }
+  }
+
+  &__prize{
+    max-width: 760px;
+
+    @media(max-width: 768px){
+      order: 2;
+    }
+  }
+
+  &__invite{
+    max-width: 400px;
+    width: 100%;
+
+    @media(max-width: 768px){
+      order: 4;
+    }
+    @media(min-width: 1199px){
+      order: 4;
+      max-width: 260px;
+    }
+  }
+
+  &__title{
+    font-family: Thicker Trial Italic, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 50px;
+    text-transform: uppercase;
+    padding: 22px 17px 2px;
+  }
+
+  &__data{
+    background: #161616;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+
+    &-title{
+      font-family: 'Thicker Bold Trial';
+      font-style: italic;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 30px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+    &-block{
+      &-item{
+        display: flex;
+        border-bottom: 1px solid;
+        margin: 18px 0 ;
+        &-key{
+          padding: 8px 0;
+          @media (max-width: 320px){
+            font-size: 12px;
+          }
+
+        }
+        &-value{
+          padding: 8px 40px;
+          @media (max-width: 320px){
+            font-size: 12px;
+          }
+        }
+        &-docs {
+
+          text-decoration: underline;
+          padding: 8px 0;
+          cursor: pointer;
+          @media (max-width: 320px){
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  &__prize {
+    background-color: #161616;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+
+    &-title{
+      font-family: 'Thicker Bold Trial';
+      font-style: italic;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 30px;
+      text-transform: uppercase;
+      color: #FADC05;
+    }
+    &-subtitle{
+      font-family: Thicker Trial, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 21px;
+      line-height: 24px;
+      color: #FFFFFF;
+      margin-top: 16px;
+    }
+    &-image{
+      text-align: center;
+
+      margin-top:10px;
+    }
+    &-button{
+      margin-top: 30px;
+      text-align: center;
+
+      .how-get-prize {
+        cursor: pointer;
+        background: #FADC05;
+        border: 2px solid #FADC05;
+        box-sizing: border-box;
+        padding: 12px 16px;
+        color: #000000;
+      }
+    }
+  }
+  &__giga{
+    background: #161616;
+    box-sizing: border-box;
+
+    &-title{
+      font-family: 'Thicker Bold Trial';
+      font-style: italic;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 30px;
+      text-transform: uppercase;
+
+      color: #FADC05;
+    }
+    &-subtitle{
+      font-family: Thicker Trial, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #FFFFFF;
+      margin-top: 16px;
+    }
+    &-descr{
+      font-family:Atomic Age, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #FFFFFF;
+      margin-top: 26px;
+    }
+    &-button {
+      margin-top: 20px;
+      text-align: center;
+      .referral-code {
+        background-color: #FADC05;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        padding: 10px;
+        font-size: 14px;
+        width:100%;
+        color: #000;
+        @media (max-width: 320px){
+          font-size: 12px;
+        }
+        img {
+          width: 16px;
+          margin-left: 18px;
+          @media (max-width: 320px){
+            width: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  &__invite {
+    padding: 14px 12px;
+    border: 1px solid #fff;
+
+    &-title{
+      font-family: 'Thicker Bold Trial';
+      font-style: italic;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 30px;
+      text-transform: uppercase;
+      color:#FADC05;
+    }
+    &-count{
+      margin-top: 40px;
+      font-family: Atomic Age, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 80px;
+      line-height: 24px;
+      color: #000;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+      &-num {
+        color: #000;
+        background-color: #fff;
+        margin: 0 6px;
+        text-align: center;
+        padding: 20px 10px ;
+      }
+      &-text{
+        font-family: Thicker Trial, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        margin-top: 25px;
+      }
+    }
+  }
+}

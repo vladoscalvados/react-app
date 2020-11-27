@@ -1,0 +1,167 @@
+*{
+  box-sizing: border-box;
+}
+.errorTitle {
+  color: #FF0F00;
+  font-family: 'Thicker Trial';
+  font-size: 12px;
+  margin: 0;
+  margin-top: 6px;
+  font-weight: 900;
+}
+.underline {
+  text-decoration: underline;
+  a {
+    line-height: 0;
+    font-size: 12px;
+    text-transform: none;
+    font-weight: 500;
+  }
+}
+.input-area__check label {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-left: 10px;
+}
+.input-area__check label span {
+  width: 27px;
+  height: 27px;
+  background-color: #D1D1D1;
+  border:5px solid #fff;
+  display: block;
+  position: absolute;
+  left: 0;
+}
+.input-area__check label p{
+  padding-left:5px;
+  font-family: Thicker Trial;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 13px;
+}
+.check {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  padding-left: 20px ;
+
+}
+
+.check:checked + .check-style::before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  background-color:#FADC05;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+}
+
+
+.check-style {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  border: 5px solid #fff;
+  margin-top: 6px;
+  margin-left: -25px;
+}
+
+.registration {
+  margin-top: 10px;
+  &__wrapper {
+    max-width: 360px;
+    background-color: #000;
+    padding: 44px 0;
+  }
+  &__inner {
+    padding: 0 20px;
+  }
+  &__close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 23px;
+    a{
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  &__title {
+    font-family: 'Thicker Trial';
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  &__subtitle {
+    font-family: Thicker Trial;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 10px;
+  }
+  &__account {
+    text-align: center;
+    a {
+      font-family: Thicker Trial;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 18px;
+      text-decoration: underline;
+      color: #fff;
+    }
+  }
+  &__button {
+    text-align: center;
+    button {
+      font-family: Thicker Trial;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 15px;
+      text-align: center;
+      background-color: #FADC05;
+      border: 2px solid #FADC05;
+      box-sizing: border-box;
+      padding: 25px ;
+    }
+  }
+}
+
+
+.inputs {
+  text-align: center;
+}
+
+.input-area {
+  margin: 14px 0;
+  input {
+    width: 100%;
+    padding: 7px 20px;
+  }
+  &__check {
+    padding: 0 20px;
+    margin: 14px 0;
+    label {
+      font-family: Thicker Trial;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 12px;
+      color: #fff;
+
+    }
+  }
+
+}

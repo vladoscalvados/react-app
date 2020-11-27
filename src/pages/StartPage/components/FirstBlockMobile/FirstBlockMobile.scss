@@ -1,0 +1,330 @@
+.container {
+  padding: 0;
+}
+
+.firstBlock {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px 55px;
+  background-image: url('../../../.././images/Layer1.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: -47px;
+
+  .contentFirst {
+    .titleFirstBlock {
+      font-family: Thicker Trial Italic, sans-serif;
+      font-size: 9vw;
+      line-height: 13vw;
+      margin-bottom: 27px;
+      letter-spacing: 2px;
+      font-weight: 900;
+      font-style: italic;
+      color: #fff;
+      text-transform: uppercase;
+      text-shadow: 3px 0 0 #000, 0 2px 0 #000, 0 3px 0 #000,
+      0 1px 0 #000, 3px 3px #000, -1px -2px 0 #000,
+      2px -2px 0 #000, -2px 1px 0 #000;
+    }
+
+    .textWrap {
+      .textFirstBlock {
+        margin: 0;
+        font-family: Atomic Age, sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: bold;
+        font-style: italic;
+        padding-bottom: 15px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.btnGroup {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .btnGrow {
+    flex-grow: 1;
+  }
+}
+
+.btnDown {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: initial;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.btnWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.btnSignUp {
+  background: #FADC05;
+  padding: 15px;
+  border: 1.2px solid #FADC05;
+  box-sizing: border-box;
+  font-family: Thicker Trial, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+@media screen and (min-width: 1220px) {
+  .firstBlock {
+    padding: 35px;
+    background-image: url('../../../.././images/Layer2.svg');
+    background-size: 50vw;
+    background-position-y: 90px;
+    background-position-x: 20%;
+    display: flex;
+    justify-content: flex-end;
+
+    .contentFirst {
+      width: 46%;
+      margin-right: 6%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+
+      .titleFirstBlock {
+        padding-bottom: 30px;
+        margin-bottom: 0;
+        font-size: 5vw;
+        line-height: 4.5vw;
+      }
+
+      .textWrap {
+        width: 62%;
+        margin-left: auto;
+        .textFirstBlock {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .btnGroup {
+    flex-wrap: nowrap;
+  }
+
+  .btnWrapper {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1220px) and (min-width: 995px) {
+  .firstBlock {
+    padding: 85px 35px;
+    background-image: url('../../../.././images/Layer2.svg');
+    background-size: 65%;
+    background-position-y: 90px;
+    background-position-x: 0;
+    display: flex;
+    justify-content: flex-end;
+
+    .contentFirst {
+      width: 48%;
+      margin-right: 6%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+
+      .titleFirstBlock {
+        padding-bottom: 35px;
+        font-size: 37px;
+        line-height: 45px;
+      }
+
+      .textWrap {
+        width: 62%;
+        margin-left: auto;
+
+        .textFirstBlock {
+          color: #fff;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .btnGroup {
+    flex-wrap: nowrap;
+  }
+
+  .btnWrapper {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 994px) and (min-width: 768px){
+  .firstBlock {
+    padding: 30px 35px;
+    background-image: url('../../../.././images/Layer2.svg');
+    background-size: 66%;
+    background-position-y: 55px;
+    background-position-x: 0;
+    display: flex;
+    justify-content: flex-end;
+
+    .contentFirst {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+
+      .titleFirstBlock {
+        padding-bottom: 20px;
+        margin-bottom: 0;
+        font-size: 4.6vw;
+        line-height: 50px;
+      }
+
+      .textWrap {
+        width: 72%;
+        margin-left: auto;
+
+        .textFirstBlock {
+          color: #fff;
+          font-size: 1.5vw;
+        }
+      }
+    }
+  }
+
+  .container, .container-md, .container-sm {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .btnGroup {
+    flex-wrap: nowrap;
+  }
+
+  .btnWrapper {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 420px) {
+  .firstBlock {
+    padding: 30px 35px;
+    background-image: url('../../../.././images/Layer2.svg');
+    background-size: 64%;
+    background-position-y: 55px;
+    background-position-x: 9%;
+    display: flex;
+    justify-content: flex-end;
+
+    .contentFirst {
+      width: 55%;
+      display: flex;
+      flex-wrap: wrap;
+
+      .titleFirstBlock {
+        padding-bottom: 20px;
+        margin-bottom: 0;
+        font-size: 4.6vw;
+        line-height: 45px;
+      }
+
+      .textWrap {
+        width: 72%;
+        margin-left: auto;
+
+        .textFirstBlock {
+          color: #fff;
+          font-size: 1.5vw;
+        }
+      }
+    }
+  }
+
+  .container, .container-md, .container-sm {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .btnGroup {
+    flex-wrap: nowrap;
+  }
+
+  .btnWrapper {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 420px) and (min-width: 361px) {
+  .firstBlock {
+    padding: 0 20px;
+
+    .contentFirst {
+      .titleFirstBlock {
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-bottom: 11vh;
+
+        .brMobile {
+          display: block;
+        }
+      }
+
+      .textWrap {
+        .textFirstBlock {
+          padding-bottom: 10px;
+          margin: 0;
+          font-size: 13.5px;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+
+  .btnWrapper {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .firstBlock {
+    padding-top: 30px;
+
+    .contentFirst {
+      .titleFirstBlock {
+        font-size: 2rem;
+        line-height: 2.7rem;
+        margin-bottom: 65px;
+      }
+
+      .textWrap {
+        .textFirstBlock {
+          margin: 0;
+          font-size: 11px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+
+  .btnWrapper {
+    padding-top: 30px;
+  }
+}

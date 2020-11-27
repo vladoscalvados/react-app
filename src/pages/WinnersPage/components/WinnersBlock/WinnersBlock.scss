@@ -1,0 +1,23 @@
+.winners__block-user-data {
+  margin-left: 5px;
+}
+.winners__block-item-data {
+  margin-left: 5px;
+  @media (min-width:1024px ){
+    margin-left: 35px;
+  }
+}
+.winners__block-item-name {
+  margin-left: 20px;
+}
+
+.winners__block-item-prize {
+  margin-left: 20px;
+}
+
+.winners__block-user-name {
+  margin-left: 20px;
+}
+.winners__block-user-prize {
+  margin-left: 20px;
+}

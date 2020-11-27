@@ -1,0 +1,69 @@
+.registration {
+  margin-top: 10px;
+
+  &__inner {
+    padding: 0 20px;
+  }
+
+  &__close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 23px;
+    a{
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  &__title {
+    font-family: Thicker Trial;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  &__subtitle {
+    font-family: Thicker Trial;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 10px;
+  }
+  &__account {
+    text-align: center;
+    a {
+      font-family: Thicker Trial;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 18px;
+      text-decoration: underline;
+      color: #fff;
+    }
+  }
+  &__button {
+    text-align: center;
+    margin-top: 20px;
+    button {
+      background: #FADC05;
+      border: 2px solid #FADC05;
+      box-sizing: border-box
+
+    }
+  }
+}
+.wrapper {
+  background-color: #000;
+}
+
+
+.input-area {
+  margin: 14px 0;
+  input {
+    padding: 7px 20px;
+  }
+}
